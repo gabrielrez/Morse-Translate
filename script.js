@@ -44,5 +44,16 @@ function translateToMorse(){
   outputBox.value = outputText.trim();
 }
 
+function clearInput(){
+  const inputText = document.querySelector('.input-text');
+  const outputBox = document.querySelector('.output-text');
+
+  inputText.value = '';
+  outputBox.value = '';
+}
+
 const translatorBtn = document.querySelector('.translate-btn');
+const clearBtn = document.querySelector('.clear-btn');
+
 translatorBtn.addEventListener('click', translateToMorse);
+clearBtn.addEventListener('click', clearInput);

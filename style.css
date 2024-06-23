@@ -35,9 +35,14 @@ textarea {
   resize: none;
 }
 
+.btn-container {
+  margin: 24px 0;
+  display: flex;
+  gap: 8px;
+}
+
 button {
   padding: 10px 20px;
-  margin: 16px 0;
   border: none;
   border-radius: 4px;
   background-color: #007bff;
@@ -49,4 +54,12 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.translate-btn {
+  width: 75%;
+}
+
+.clear-btn {
+  width: 25%;
 }
